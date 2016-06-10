@@ -1,0 +1,376 @@
+// ------------------------------------
+// Header
+// ------------------------------------
+
+// Background
+header {
+  position: relative;
+  width: 100%;
+  background: url('../img/header-background.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+
+  .overlay {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background-color: rgba($overlay-color, 0.95);
+  }
+}
+
+// Navigation
+header nav {
+  margin-top: 2rem;
+  margin-bottom: 5rem;
+
+  ul {
+    display: inline-block;
+  }
+
+  ul.social-icons {
+    img {
+      height: 1.4rem;
+      opacity: .6;
+      //margin-right: .5rem;
+      -webkit-transition: .2s ease-in-out;
+      transition: .2s ease-in-out;
+
+      &:hover {
+        opacity: 1;
+      }
+    }
+  }
+
+  li {
+    display: inline-block;
+  }
+
+  li a {
+    font-size: .9rem;
+    padding: .7rem;
+    font-weight: 400;
+    color: $white-color;
+    font-weight: $font-weight--light;
+    text-transform: uppercase;
+    -webkit-transition: .2s ease-in-out;
+    transition: .2s ease-in-out;
+
+    &:hover {
+      color: $orange-color;
+    }
+  }
+}
+
+// All elements inside header section
+header {
+  color: $white-color;
+
+  .header-content {
+    padding: 6rem 0 10rem;
+  }
+
+  .hackathon-logo {
+    background: url('../img/hackathon-logo.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    width: 3.75rem;
+    height: 4.8125rem;
+    margin-bottom: 1.5rem;
+  }
+
+
+  .hackathon-info {
+    font-size: 1.25rem;
+    font-weight: $font-weight--light;
+    margin-bottom: .5rem;
+
+    .hackathon-name {
+      text-transform: uppercase;
+      font-weight: 400;
+    }
+
+    .dot {
+      display: inline-block;
+      position: absolute;
+      width: .4rem;
+      height: .4rem;
+      background-color: $white-color;
+      border-radius: .2rem;
+      top: .7rem;
+    }
+
+    .dot-left {
+      right: -1rem;
+    }
+    .dot-right {
+      left: -1rem;
+    }
+  }
+
+  .line {
+    display: none;
+    width: 38rem;
+    height: 1px;
+    background-color: $white-color;
+  }
+
+  .header-buttons {
+    display: inline-block;
+    margin-top: 2rem;
+
+    a {
+      display: inline-block;
+      font-size: 1.25rem;
+      font-weight: 400;
+      text-transform: uppercase;
+      color: $orange-color;
+      border: 2px solid $orange-color;
+      padding: .6rem 4rem;
+
+      &:hover {
+        color: $white-color;
+      }
+    }
+
+    a:last-child {
+      margin-left: 1rem;
+    }
+  }
+}
+
+// ------------------------------------
+// Facts
+// ------------------------------------
+
+section#facts {
+  span {
+    display: block;
+    font-weight: $font-weight--light;
+  }
+
+  span.title {
+    text-transform: uppercase;
+    color: $orange-color;
+    text-decoration: underline;
+    font-size: 1.125rem;
+    margin-bottom: .5rem;
+  }
+
+}
+
+
+// ------------------------------------
+// Photo Block
+// ------------------------------------
+
+section#photo-block {
+  padding: 0;
+
+  img.main-photo {
+    display: block;
+    width: 95%;
+    margin: 0 auto;
+  }
+}
+
+
+// ------------------------------------
+// FAQ
+// ------------------------------------
+
+section#faq {
+  ul.questions {
+    list-style: none;
+  }
+
+  .questions__question {
+    margin-bottom: 3rem;
+
+    div.text {
+      font-weight: $font-weight--light;
+      font-size: 1rem;
+    }
+  }
+
+  a.more-questions-link {
+    display: block;
+    margin-top: 1.5rem;
+  }
+}
+
+
+// ------------------------------------
+// Application
+// ------------------------------------
+
+section#application {
+  background-color: $overlay-color;
+
+  h2, p {
+    color: $white-color;
+  }
+
+  p {
+    margin-bottom: 4rem;
+  }
+
+  form {
+    input {
+      display: block;
+      width: 100%;
+      height: 2.5rem;
+      border-radius: 0;
+    }
+
+    input[type="text"] {
+      border: none;
+      padding-left: 1rem;
+      font-size: 1rem;
+      font-weight: $font-weight--light;
+
+      &::-webkit-input-placeholder { /* WebKit browsers */
+        font-family: $font-stack--primary;
+        font-weight: $font-weight--light;
+      }
+
+      &:-moz-placeholder { /* WebKit browsers */
+        font-family: $font-stack--primary;
+        font-weight: $font-weight--light;
+      }
+
+      &::-moz-placeholder { /* WebKit browsers */
+        font-family: $font-stack--primary;
+        font-weight: $font-weight--light;
+      }
+
+      &:-ms-input-placeholder { /* WebKit browsers */
+        font-family: $font-stack--primary;
+        font-weight: $font-weight--light;
+      }
+
+      
+    }
+
+    input[type="submit"] {
+      font-size: 1rem;
+      font-weight: $font-weight--light;
+      font-family: $font-stack--primary;
+      border: 1px solid $white-color;
+      color: $white-color;
+      text-transform: uppercase;
+      background: none;
+    }
+  }
+
+}
+
+
+// ------------------------------------
+// Organizers
+// ------------------------------------
+
+section#organizers {
+
+  div.organizer-logo img {
+    display: block;
+    max-height: 5rem;
+    margin: 0 auto;
+
+    &.builds-logo {
+      max-height: 4rem;
+    }
+  }
+}
+
+
+// ------------------------------------
+// Get in touch
+// ------------------------------------
+
+section#get-in-touch {
+  
+  .social-icons {
+    margin-top: 2rem;
+
+    a > img {
+      display: block;
+      margin: 0 auto;
+      height: 2.5rem;
+    }
+  }
+}
+
+
+// ------------------------------------
+// Footer
+// ------------------------------------
+
+footer {
+  background-color: $overlay-color;
+  padding: 1rem 0;
+
+  span.copyright {
+    display: block;
+    color: rgba($white-color, .5);
+    font-weight: $font-weight--light;
+  }
+}
+
+
+@media only screen and (max-width: 43em) {
+  header .overlay {
+    .header-content {
+      padding: 4rem 0;
+    }
+
+    .hackathon-info .hackathon-name {
+      font-size: 2rem;
+      font-weight: $font-weight--light;
+      margin-bottom: 1rem;
+    }
+
+    .header-buttons div {
+      width: 80%;
+      margin-bottom: 1rem;
+
+      a {
+        width: 100%;
+      }
+
+      a:last-child {
+        margin-left: 0;
+      }
+    }
+
+  }
+
+  section#facts {
+    .facts--fact {
+      text-align: center;
+      margin-bottom: 2rem;
+    }
+  }
+
+  section {
+    padding: 5rem 0;
+  }
+
+  h2 {
+    margin-bottom: 5rem;
+  }
+
+  section#organizers {
+    .organizer-logo {
+      margin-bottom: 5rem;
+    }
+
+    padding-bottom: 1rem;
+  }
+}
+
+
+
+
+
