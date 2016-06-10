@@ -1,0 +1,13 @@
+{
+  "name": "boston-hacks-website",
+  "author": "Ivan Uvarov <tonk2012@gmail.com>",
+  "version": "1.0.0",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/uvarovis/Boston-Hacks-Website.git"
+  },
+  "devDependencies": {},
+  "dependencies": {
+    "firebase": "^2.2.9"
+  }
+}

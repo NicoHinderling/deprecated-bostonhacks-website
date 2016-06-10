@@ -1,0 +1,484 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="BostonHacks - Oct 31 - Nov 1 @ Boston University. BostonHacks is Boston University's top hackathon.">
+    <meta name="author" content="The BostonHacks Team">
+    <title>BostonHacks | Oct.31 - Nov.1</title>
+    <!-- <link rel="icon" type="image/png" href="img/favicon.png"> -->
+    <!-- <link rel="stylesheet" href="css/app.css"> -->
+    <!-- <link rel="stylesheet" href="css/added.css"> -->
+    <link rel="icon" type="image/png" href="{{ url_for('static', filename='img/favicon.png') }}">
+    <link rel=stylesheet type=text/css href="{{ url_for('static', filename='css/app.css') }}">
+    <link rel=stylesheet type=text/css href="{{ url_for('static', filename='css/added.css') }}">
+
+    <!-- Twitter metadata -->
+    <meta property="twitter:card" content="summary">
+    <meta property="twitter:site" content="@boston_hacks">
+    <meta property="twitter:title" content="BostonHacks - Oct. 31 - Nov. 1 @ Boston University">
+    <meta property="twitter:description" content="BostonHacks is Boston University's top hackathon. For 24 hours on October 31 to November 1, 500 students will come to Boston University, form teams around a problem or idea, and collaboratively code a unique solution from scratch.">
+    <meta property="twitter:image" content="https://bostonhacks.io/img/favicon.png">
+    <meta property="twitter:url" content="https://bostonhacks.io/">
+
+    <!-- Facebook metadata -->
+    <meta property="fb:app_id" content="1598825707023977">
+    <meta property="og:title" content="BostonHacks - Oct. 31 - Nov. 1 @ Boston University">
+    <meta property="og:description" content="BostonHacks is Boston University's top hackathon. For 24 hours on October 31 to November 1, 500 students will come to Boston University, form teams around a problem or idea, and collaboratively code a unique solution from scratch.">
+    <meta property="og:image" content="https://bostonhacks.io/img/favicon.png">
+    <meta property="og:url" content="https://bostonhacks.io/">
+    <meta property="og:type" content="website">
+    
+    <!-- <script src="bower_components/modernizr/modernizr.js"></script> -->
+    <script type="text/javascript" src="{{ url_for('static', filename='bower_components/modernizr/modernizr.js') }}"></script> 
+
+    <!--<script src="bower_components/modernizr/modernizr.js"></script>-->
+    <script type="text/javascript" src="{{ url_for('static', filename='bower_components/modernizr/modernizr.js') }}"></script> 
+
+    <!-- TypeKit -->
+    <script src="//use.typekit.net/kvl0hgw.js"></script>
+    <script>try{Typekit.load();}catch(e){}</script>
+  </head>
+  <body>
+    
+    <header>
+      <div class="overlay">
+        <div class="row">
+          <div class="columns small-12 text-center">     
+            <nav class="hide-for-small-only">
+              <ul class="social-icons text-left columns medium-4 small-12">
+                <li><a href="https://twitter.com/boston_hacks" target="_blank"><img src="{{ url_for('static', filename='img/twitter.png') }}"></a></li>
+                <li><a href="https://instagram.com/bostonhacks" target="_blank"><img src="{{ url_for('static', filename='img/instagram.png') }}"></a></li>
+                <li><a href="https://www.facebook.com/bostonhacks" target="_blank"><img src="{{ url_for('static', filename='img/facebook.png') }}"></a></li>
+              </ul>
+
+              <ul class="text-right columns medium-8" data-magellan-expedition data-options="destination_threshold:-60;" style="padding-right:20%; padding-left:0px;">
+                <li data-magellan-arrival="about"><a href="#about">About</a></li>
+                <li data-magellan-arrival="faq"><a href="#faq">FAQ</a></li>
+                <li data-magellan-arrival="schedule"><a href="#schedule">Schedule</a></li>
+                <li data-magellan-arrival="sponsors"><a href="#sponsors">Sponsors</a></li>
+                <!-- <li data-magellan-arrival="application"><a href="/auth/mlh">Attend</a></li> -->
+                <!-- <li data-magellan-arrival="application"><a href="http://my.bostonhacks.io">Attend</a></li> -->
+                <li data-magellan-arrival="get-in-touch"><a href="#get-in-touch">Get in touch</a></li>
+	      </ul>
+            </nav>
+
+            <div class="header-content">
+              <div style="margin-bottom: 2rem;">
+                <div class="hackathon-logo center"></div>
+                <div class="gshadow"></div>
+              </div>
+
+              <div class="row">
+                <!-- Desktop -->
+                <div class="hackathon-info columns large-8 large-offset-2 medium-12 hide-for-small-only">
+                  <div class="columns medium-4 small-12 text-right">Oct. 31 - Nov. 1 <span class="dot dot-left hide-for-small-only"></span></div>
+                  <div class="hackathon-name columns medium-4 small-12">Boston Hacks</div>
+                  <div class="columns medium-4 small-12 text-left"><span class="dot dot-right hide-for-small-only"></span>Boston University</div>
+                </div>
+                <!-- Mobile -->
+                <div class="hackathon-info show-for-small-only">
+
+                  <div class="hackathon-name columns small-12">Boston Hacks</div>
+                  <div class="columns small-12 text-center">Oct. 31 - Nov. 1 &nbsp;&nbsp;|&nbsp;&nbsp; Boston University</div>
+                </div>
+
+              </div>
+
+              <div class="line center"></div>
+
+              <h1 class="hide-for-small-only">Wanna build something amazing?</h1>
+              <div class="header-buttons center" data-magellan-expedition data-options="destination_threshold:-100;">
+                <div style="display: inline-block;" data-magellan-arrival="application"><a href="http://my.bostonhacks.io" class="hvr-sweep-to-top">Attend</a></div>
+                <div style="display: inline-block;" data-magellan-arrival="sponsors"><a data-magellan-arrival="sponsors" href="https://docs.google.com/forms/d/1aunmfGk2GSpjuS9bH_eMYhO0juwEtuMh1VeY9EZGkPo/viewform" target="_blank" class="hvr-sweep-to-top">Volunteer</a></div>
+              </div>
+              <div class="boo"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <section id="about">
+      <div class="row">
+        <div class="columns small-12">
+          <h2>What is Boston Hacks?</h2>
+          <p class="columns small-12 medium-7 small-centered">BostonHacks is Boston University's top hackathon. For 24 hours on October 31 to November 1, 500 students will come to Boston University, form teams around a problem or idea, and collaboratively code a unique solution from scratch. Imagine and create the most impressive hacks during the weekend!</p>
+        </div>
+      </div>
+    </section>
+
+    
+    <section id="facts" class="hide-for-small-only">
+      <div class="slant top left"></div>
+      <div class="row">
+        <div class="facts--fact columns medium-2 medium-offset-1 small-12 text-left">
+          <span class="title">Who</span>
+          <span class="text">500 students</span>
+        </div>
+        <div class="facts--fact columns medium-3 small-12 text-left">
+          <span class="title">When</span>
+          <span class="text">October 31 - November 1</span>
+        </div>
+        <div class="facts--fact columns medium-3 small-12 text-left">
+          <span class="title">Where</span>
+          <span class="text">Metcalf Hall, Boston University, MA</span>
+        </div>
+        <div class="facts--fact columns medium-2 small-12 left text-left">
+          <span class="title">How long</span>
+          <span class="text">24 hours of pure hacking</span>
+        </div>
+      </div>
+      <div class="slant bottom right"></div>
+    </section>
+
+    <!--
+    <section id="photo-block">
+      <img class="main-photo" src="img/photo-block-main.png">
+    </section>
+    -->
+
+    <section id="faq">
+      <div class="row">
+        <div class="columns small-12">
+          <h2>FAQ</h2>
+        </div>
+      
+      <div class="columns small-12">
+        <div class="questions__question columns medium-4 small-12">
+          <h3 class="title">Where is it?</h3>
+          <div class="text">George Sherman Union, 2nd Floor in Metcalf Hall at 775 Commonwealth Avenue, Boston, MA, 02215.</div>
+        </div>
+        <div class="questions__question columns medium-4 small-12">
+          <h3 class="title">Who's coming?</h3>
+          <div class="text">We expect 500 hackers from all around the world to attend BostonHacks.</div>
+        </div>
+        <div class="questions__question columns medium-4 small-12">
+          <h3 class="title">Who can attend?</h3>
+          <div class="text">All students are welcome. Unfortunately, we will not be able to accommodate students under 18 this year.</div>
+        </div>
+        <div class="questions__question columns medium-4 small-12" style="margin-bottom:0px;">
+          <h3 class="title">Do I need experience?</h3>
+          <div class="text">No experience necessary. Don't worry about being new to hackathons. We will have plenty of mentors and resources. Come, learn, and experience your first hackathon at BostonHacks!</div>
+        </div>
+        <div class="questions__question columns medium-4 small-12">
+          <h3 class="title">Are there any rules?</h3>
+          <div class="text">We want to ensure a positive experience for every participant. We encourage you to read our 
+            <a href="http://static.mlh.io/docs/mlh-code-of-conduct.pdf">Code of Conduct</a>.</div>
+        </div>
+        <div class="questions__question columns medium-4 small-12">
+          <h3 class="title">What should I bring?</h3>
+          <div class="text">You should bring your laptop, phone, chargers, and sleeping bag. All food and other accommodations will be taken care of.</div>
+        </div>
+        <div class="questions__question columns medium-4 small-12">
+          <h3 class="title">Can we form teams?</h3>
+          <div class="text">Of course you can! We encourage people to work in teams of up to 4 people. You can work alone, but it won't be the same. There will be plenty of team building events on site and online.</div>
+        </div>
+        <div class="questions__question columns medium-4 small-12">
+          <h3 class="title">Does it cost anything?</h3>
+          <div class="text">BostonHacks is 100% free. You won't have to spend a dime! Everything will be absolutely free.</div>
+        </div>
+        <div class="questions__question columns medium-4 small-12" style="float:left;">
+          <h3 class="title">Will there be travel reimbursements?</h3>
+          <div class="text">We're working on providing travel reimbursements, and we will provide the form later.</div>
+        </div>
+      </div>
+
+
+        <div class="columns small-12 text-center" data-magellan-expedition data-options="destination_threshold:-60;" data-magellan-arrival="get-in-touch">
+          <a class="more-questions-link" href="#get-in-touch">more questions?</a>
+        </div>
+      </div>
+    </section>
+
+    <section id="schedule">
+      <div id="row">
+        <div class="columns small-12">
+          <h2>SCHEDULE</h2>
+        </div>
+        <table class="schedule-table" style="margin: 0 auto;">
+          <thead>
+            <tr>
+              <th class="schedule-header text-left">Saturday, Oct. 31</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>10:30 AM</td>
+              <td>Registration</td>
+            </tr>
+            <tr>
+              <td>12:00 PM</td>
+              <td>Opening Ceremony</td>
+            </tr>
+            <tr>
+              <td>1:30 PM</td>
+              <td>Lunch</td>
+            </tr>
+            <tr>
+              <td>1:30 PM</td>
+              <td>Hacking Begins</td>
+            </tr>
+            <tr>
+              <td>1:45 PM</td>
+              <td>Form Team Event</td>
+            </tr>
+            <tr>
+              <td>6:00 PM</td>
+              <td>Dinner</td>
+            </tr>
+          </tbody>
+        </table>
+        <table class="schedule-table" style="margin: 0 auto; margin-top: 2rem;">
+          <thead>
+            <tr>
+              <th class="schedule-header text-left">Sunday, Nov. 1</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>12:00 AM</td>
+              <td>Midnight Snack</td>
+            </tr>
+            <tr>
+              <td>7:30 AM</td>
+              <td>Breakfast</td>
+            </tr>
+            <tr>
+              <td>11:30 AM</td>
+              <td>Lunch</td>
+            </tr>
+            <tr>
+              <td>12:00 PM</td>
+              <td>Submission</td>
+            </tr>
+            <tr>
+              <td>12:30 PM</td>
+              <td>Preliminary Judging</td>
+            </tr>
+            <tr>
+              <td>2:00 PM</td>
+              <td>Closing Ceremony</td>
+            </tr>
+        </table>
+      </div>
+    </section>
+
+    <section id="application">
+      <div class="slant top left"></div>
+        <!--
+        <div class="banner">
+          <div class="line">
+            <a href="/auth/mlh"><span id="test">Register</span></a>
+          </div>
+        </div>
+        -->
+        <div class="row">
+          <div class="columns small-10 text-center">
+            <a href="http://my.bostonhacks.io"><img id="pumpkin" src="{{ url_for('static', filename='img/jack_o_lantern.png') }}"/></a>
+          </div>
+        </div>
+        <div class='firepit'>
+          <div class='fire'>
+            <div class='flame'></div>
+            <div class='flame'></div>
+            <div class='flame'></div>
+            <div class='flame'></div>
+            <div class='spark'></div>
+            <div class='spark'></div>
+            <div class='spark'></div>
+            <div class='spark'></div>
+            <div class='spark'></div>
+            <div class='spark'></div>
+            <div class='spark'></div>
+            <div class='spark'></div>
+            <div class='spark'></div>
+            <div class='spark'></div>
+            <div class='spark'></div>
+            <div class='spark'></div>
+          </div>
+        </div>
+      <div class="slant bottom right"></div>
+    </section>
+
+    <section id="sponsors">
+      <div class="row">
+        <div class="columns small-12 text-center">
+          <h2>Sponsors</h2>
+          <p class="columns small-12 medium-7 small-centered">Interested in being a sponsor? Contact us at <a href="mailto:contact@bostonhacks.io">contact@bostonhacks.io</a>!</p>
+          <p class="columns small-12 medium-7 small-centered">Information for sponsors can be found on our <a href="{{ url_for('static', filename='doc/boston-hacks-sponsors.pdf') }}">Sponsorship Document</a>.</p>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class ="company-logo columns small-6 medium-centered medium-6"  style="margin-bottom: 2.0rem;">
+          <a target = "_blank" href="http://www.autodesk.com"><img class="autodesk-logo" src="{{ url_for('static', filename='img/autodesk_logo.png') }}"></a>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class ="company-logo columns small-6 medium-6" style="margin-bottom: 2.0rem;">
+          <a target = "_blank" href="http://microsoft.com"><img class="microsoft-logo" src="{{ url_for('static', filename='img/microsoft_logo.png') }}"></a>
+        </div>
+        <div class ="company-logo columns small-6 medium-6" style="margin-bottom: 2.0rem;">
+          <a target = "_blank" href="https://www.capitalone.com"><img class="capitalone-logo" src="{{ url_for('static', filename='img/capitalone_logo.png') }}"></a>
+        </div>
+
+        <div class ="company-logo columns small-6 medium-6"  style="margin-bottom: 2.0rem;">
+          <a target = "_blank" href="http://www.bu.edu/cs"><img class="bucs-logo" src="{{ url_for('static', filename='img/bu_cs.png') }}"></a>
+        </div>
+        <div class ="company-logo columns small-6 medium-6"  style="margin-bottom: 2.0rem;">
+          <a target = "_blank" href="https://www.libertymutual.com"><img class="libertymutual-logo" src="{{ url_for('static', filename='img/libertymutual_logo.jpg') }}"></a>
+        </div>
+
+        <div class ="company-logo columns small-6 medium-6"  style="margin-bottom: 2.0rem;">
+          <a target = "_blank" href="http://www8.hp.com/us/en/software-solutions/big-data-cloud-haven-ondemand"><img class="hp-logo" src="{{ url_for('static', filename='img/hp_logo.png') }}"></a>
+        </div>
+        <div class ="company-logo columns small-6 medium-6"  style="margin-bottom: 2.0rem;">
+          <a target = "_blank" href="https://www.hds.com"><img class="hitachi-logo" src="{{ url_for('static', filename='img/hitachi_logo.png') }}"></a>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class ="company-logo columns small-6 medium-6"  style="margin-bottom: 2.0rem;">
+          <a target = "_blank" href="http://www.epic.com"><img class="epic-logo" src="{{ url_for('static', filename='img/epic_logo.jpg') }}"></a>
+        </div>
+        <div class ="company-logo columns small-6 medium-6"  style="margin-bottom: 2.0rem;">
+          <a target = "_blank" href="http://thielfellowship.org"><img class="thiel-logo" src="{{ url_for('static', filename='img/thiel_logo.png') }}"></a>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class ="company-logo columns small-6 medium-centered medium-6"  style="margin-bottom: 5.0rem;">
+          <a target = "_blank" href="http://www.bu.edu/ece"><img class="buece-logo" src="{{ url_for('static', filename='img/bu_ece.gif') }}"></a>
+        </div>
+      </div>
+
+      <div class="row">  
+        <div class ="company-logo columns small-6 medium-3"  style="margin-bottom: 3.0rem;">
+          <a target = "_blank" href="https://citi.com"><img class="citi-logo" src="{{ url_for('static', filename='img/citi_logo.jpg') }}"></a>
+        </div>
+        <div class ="company-logo columns small-6 medium-3" style="margin-bottom: 3.0rem;">
+          <a target = "_blank" href="http://kayak.com"><img class="kayak-logo" src="{{ url_for('static', filename='img/kayak_logo.png') }}"></a>
+        </div>
+        <div class="company-logo columns small-6 medium-3" style="margin-bottom: 3.0rem;">
+          <a target = "_blank" href="http://twilio.com"><img class="twilio-logo" src="{{ url_for('static', filename='img/twilio_logo.png') }}"></a>
+        </div>
+        <div class="company-logo columns small-6 medium-3" style="margin-bottom: 3.0rem;">
+          <a target = "_blank" href="http://bloomberg.com"><img class="bloomberg-logo" src="{{ url_for('static', filename='img/bloomberg_logo.jpg') }}"></a>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="company-logo columns small-6 medium-3" style="margin-bottom: 3.0rem;">
+          <a target = "_blank" href="http://www.ge.com/"><img class="ge-logo" src="{{ url_for('static', filename='img/ge_logo.png') }}"></a>
+        </div>
+        <div class="company-logo columns small-6 medium-3" style="margin-bottom: 3.0rem;">
+          <a target = "_blank" href="http://www.mitre.org"><img class="mitre-logo" src="{{ url_for('static', filename='img/mitre_logo.jpg') }}"></a>
+        </div>
+        <div class="company-logo columns small-6 medium-3" style="margin-bottom: 3.0rem;">
+          <a target = "_blank" href="http://google.com"><img class="google-logo" src="{{ url_for('static', filename='img/google_logo.png') }}"></a>
+        </div>
+        <div class="company-logo columns small-6 medium-3" style="margin-bottom: 3.0rem;">
+          <a target = "_blank" href="http://www.1517fund.com/"><img class="1517-logo" src="{{ url_for('static', filename='img/1517_logo.png') }}"></a>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="company-logo columns small-6 medium-3">
+          <a target = "_blank" href="http://www.att.com"><img class="att-logo" src="{{ url_for('static', filename='img/att_logo.jpg') }}"></a>
+        </div>
+        <div class="company-logo columns small-6 medium-3">
+          <a target = "_blank" href="https://www.wolfram.com/language"><img class="wolfram-logo" src="{{ url_for('static', filename='img/wolfram_logo.png') }}"></a>
+        </div>
+        <div class="company-logo columns small-6 medium-3">
+          <a target = "_blank" href="https://www.soylent.com/"><img class="soylent-logo" src="{{ url_for('static', filename='img/soylent_logo.png') }}"></a>
+        </div>
+      </div>
+
+    </section>
+
+    <section id="organizers">
+      <div class="row">
+        <div class="columns small-12 text-center">
+          <h2 class="organizer-header">Organized by</h2>
+        </div>
+
+        <div class="organizer-logo columns small-6 medium-3">
+          <a target="_blank" href="http://openwebbu.org/"><img class="openweb-logo" src="{{ url_for('static', filename='img/openweb-logo.png') }}"></a>
+        </div>
+        <div class="organizer-logo columns small-6 medium-3">
+          <a target="_blank" href="https://www.facebook.com/makebu"><img class="makebu-logo" src="{{ url_for('static', filename='img/makebu-logo.png') }}"></a>
+        </div>
+        <div class="organizer-logo columns small-6 medium-3">
+          <a target="_blank" href="http://questromworld.bu.edu/entrepreneurship/the-buzz-zone"><img class="buzzlab-logo" src="{{ url_for('static', filename='img/buzz_lab.jpg') }}"></a>
+        </div>
+        <div class="organizer-logo columns small-6 medium-3">
+          <a target="_blank" href="http://builds.cc/"><img class="builds-logo" src="{{ url_for('static', filename='img/builds-logo.png') }}"></a>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class ="organizer-logo columns small-6 medium-centered medium-6"  style="margin-top: 5.0rem;">
+          <a target="_blank" href="https://mlh.io/"><img class="mlh-logo" src="{{ url_for('static', filename='img/mlh-logo.png') }}"></a>
+        </div>
+      </div>
+    </section>
+
+    <div class="separator">
+      <div></div>
+    </div>
+
+    <section id="get-in-touch">
+      <div class="row">
+        <div class="columns small-12 text-center">
+          <h2>Get in touch with us</h2>
+          <p class="columns small-12 medium-5 small-centered">Have questions or offers? Just want to&nbsp;chat?</p>
+          <p class="columns small-12 medium-5 small-centered">Feel free to email us at <a href="mailto:contact@bostonhacks.io">contact@bostonhacks.io</a><br> or connect on social networks:</p>
+        </div>
+      </div>
+
+      <div class="row social-icons">
+        <div class="columns small-8 medium-3 small-centered">
+          <div class="row collapse">
+            <div class="columns small-4">
+              <a class="twitter" target="_blank" href="https://twitter.com/boston_hacks"><img src="{{ url_for('static', filename='img/twitter-circle.png') }}"></a>
+            </div>
+            <div class="columns small-4">
+              <a class="instagram" target="_blank" href="https://instagram.com/bostonhacks"><img src="{{ url_for('static', filename='img/instagram-circle.png') }}"></a>
+            </div>
+            <div class="columns small-4">
+              <a class="facebook" target="_blank" href="https://www.facebook.com/bostonhacks"><img src="{{ url_for('static', filename='img/facebook-circle.png') }}"></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <span class="copyright text-center">Made with <span id="heart">&hearts;</span> by the BostonHacks Team.</span>
+    </footer>
+
+    <!--// <script src="bower_components/jquery/dist/jquery.min.js"></script>
+    // <script src="bower_components/foundation/js/foundation.min.js"></script>
+    // <script src="bower_components/foundation/js/foundation/foundation.magellan.js"></script>
+    // <script src="js/app.js"></script> -->
+
+    <script type="text/javascript" src="{{ url_for('static', filename='bower_components/jquery/dist/jquery.min.js') }}"></script> 
+    <script type="text/javascript" src="{{ url_for('static', filename='bower_components/foundation/js/foundation.min.js') }}"></script> 
+    <script type="text/javascript" src="{{ url_for('static', filename='bower_components/foundation/js/foundation/foundation.magellan.js') }}"></script> 
+    <script type="text/javascript" src="{{ url_for('static', filename='js/app.js') }}"></script>
+
+    <!-- Google Analytics script -->
+    <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+      ga('create', 'UA-64463028-1', 'auto');
+      ga('send', 'pageview');
+    </script>
+
+  </body>
+</html>

@@ -1,0 +1,85 @@
+// ------------------------------------
+// Base
+// ------------------------------------
+
+body {
+  font-family: $font-stack--primary;
+  font-weight: $base__font-weight;
+  color: $base__text-color;
+  font-size: $base__font-size;
+  background-color: $base__background-color--dark;
+}
+
+a {
+  text-decoration: none;
+  color: $base__link-color;
+}
+
+
+// ------------------------------------
+// Headlines
+//   h1 - slogan in the header
+//   h2 - section titles
+//   h3 - FAQ questions
+// ------------------------------------
+
+h1, h2 {
+  text-transform: uppercase;
+  text-align: center;
+}
+
+h1, h3 {
+  font-weight: $font-weight--normal;
+}
+
+h1 {
+  font-size: $base__h1--font-size;
+}
+
+h2, h3 {
+  color: $color__text-color--headline;
+}
+
+h2 {
+  font-size: $base__h2--font-size;
+  font-weight: $font-weight--bold;
+  margin-bottom: $base__h2--margin-bottom;
+}
+
+h3 {
+  font-size: $base__h3--font-size;
+}
+
+
+// ------------------------------------
+// Sections
+// ------------------------------------
+
+section {
+  padding-top: $base__section--padding-top;
+  padding-bottom: $base__section--padding-bottom;
+  background-color: $base__background-color--bright;
+}
+
+
+// ------------------------------------
+// Other elements
+// ------------------------------------
+
+// line separating sections
+div.separator {
+  padding: 0;
+  background-color: $base__background-color--bright;
+
+  div {
+    width: 3rem;
+    height: 1px;
+    background-color: rgba($color__text-color--primary, .5);
+    margin: 0 auto;
+  }
+}
+
+
+
+
+

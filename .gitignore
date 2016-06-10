@@ -1,0 +1,8 @@
+bower_components/
+npm-debug.log
+node_modules/
+config.codekit
+creds.py
+*.pyc
+attendee_data/
+.DS_Store
